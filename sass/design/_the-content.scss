@@ -1,0 +1,51 @@
+.the-content {
+    padding: 50px 100px;
+    line-height: 1.5;
+}
+
+.the-title {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: $secondary;
+}
+
+.the-box {
+    margin-bottom: 20px;
+
+    & > b {
+        margin-bottom: 5px;
+        display: block;
+        color: $secondary;
+    }
+}
+
+// ! responsiveness
+@media (max-width: 950px) {
+    .the-content {
+        padding: 40px 70px;
+    }
+}
+
+@media (max-width: 750px) {
+    .the-content {
+        padding: 20px 40px 30px;
+    }
+}
+
+@media (max-width: 700px) {
+    .the-content {
+        padding: 30px;
+    }
+
+    .the-title {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 420px) {
+    .the-content {
+        padding: 20px 10px;
+    }
+}

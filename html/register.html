@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="uz">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Register | Bozor</title>
+        <link rel="shortcut icon" href="../img/icon.PNG" />
+        <link rel="stylesheet" href="../fontawesome/css/all.min.css" />
+        <link rel="stylesheet" href="../css/main.css" />
+    </head>
+    <body id="body">
+        <div class="helper">
+            <div class="container helper__inner">
+                <div class="helper__left">
+                    <div class="helper__email"><span>Email: </span>info@e-bozor.uz</div>
+                    <div class="helper__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat!</div>
+                </div>
+                <div class="helper__right">
+                    <div class="helper__dropdown">
+                        <button class="helper__button">
+                            Til
+                            <i class="helper__dropdown--icon fas fa-chevron-down"></i>
+                        </button>
+                        <ul class="lang helper__dropdown-list">
+                            <li class="helper__dropdown-item">
+                                <a href="#!" data-lang="uz">O'zbekcha</a>
+                            </li>
+                            <li class="helper__dropdown-item">
+                                <a href="#!" data-lang="ru">Русский</a>
+                            </li>
+                            <li class="helper__dropdown-item">
+                                <a href="#!" data-lang="en">English</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <header class="siteheader siteheader-individual container">
+            <a href="../index.html" class="sitelogo sitelogo-individual">
+                <img src="../img/logo.png" alt="sitelogo" />
+            </a>
+            <a class="signup-register" href="sign-up.html">Sign Up</a>
+        </header>
+
+        <nav class="sitenav">
+            <div class="sitenav__inner container">
+                <button class="sitenav__menu-opener">
+                    <i class="fas fa-ellipsis-h"></i>
+                </button>
+                <ul class="sitenav__list">
+                    <li class="sitenav__item">
+                        <a class="sitenav__link" href="../index.html" data-hover-text="Bosh sahifa">
+                            <span>Bosh sahifa</span>
+                        </a>
+                    </li>
+                    <li class="sitenav__item">
+                        <a class="sitenav__link" href="products.html" data-hover-text="Chegirmalar">
+                            <span>Chegirmalar</span>
+                        </a>
+                    </li>
+                    <li class="sitenav__item">
+                        <a class="sitenav__link" href="news.html" data-hover-text="Yangiliklar">
+                            <span>Yangiliklar</span>
+                        </a>
+                    </li>
+                    <li class="sitenav__item">
+                        <a class="sitenav__link" href="rules.html" data-hover-text="Foydalanish qoidalari">
+                            <span>Foydalanish qoidalari</span>
+                        </a>
+                    </li>
+                    <li class="sitenav__item">
+                        <a class="sitenav__link" href="contact.html" data-hover-text="Biz bilan aloqa">
+                            <span>Biz bilan aloqa</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="phone-call">
+                    <a href="tel:+998338778787">
+                        <i class="fas fa-phone-alt"></i>
+                        +998338778787
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <section class="register form-wrapper">
+            <header class="register__header">
+                <h2 class="register__title">Create your account</h2>
+                <p class="register__lead">Registration is easy</p>
+            </header>
+            <form action="#" class="register__form my-form" method="POST">
+                <label for="register__email" class="my-label">
+                    <span class="register__sign">
+                        Email address
+                        <i class="register__sign--star fas fa-star-of-life"></i>
+                    </span>
+                </label>
+                <input id="register__email" type="email" class="my-input form-control" name="register__email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" maxlength="100" required />
+                <label for="register__name" class="my-label">
+                    <span class="register__sign">
+                        First name
+                        <i class="register__sign--star fas fa-star-of-life"></i>
+                    </span>
+                </label>
+                <input id="register__name" type="text" class="my-input form-control" name="register__name" maxlength="100" required />
+                <label for="register__password" class="my-label">
+                    <span class="register__sign">
+                        Password
+                        <i class="register__sign--star fas fa-star-of-life"></i>
+                    </span>
+                </label>
+                <div class="register__password-wrap input-wrap">
+                    <input id="register__password" type="password" class="password-input my-input form-control" name="register__password" maxlength="50" required data-info="0" />
+                    <i id="show-password" class="show-password far fa-eye" data-info="0"></i>
+                </div>
+                <button class="form-control register__submit" type="submit">
+                    Register
+                </button>
+                <a href="#!" class="register__social form-control">
+                    <img src="../img/google icon.png" alt="google icon" />
+                    <span>Continue with Google</span>
+                </a>
+                <a href="#!" class="register__social form-control">
+                    <img src="../img/facebook icon.png" alt="facebook icon" />
+                    <span>Continue with Facebook</span>
+                </a>
+                <a href="#!" class="register__social form-control">
+                    <img src="../img/apple icon.png" alt="apple icon" />
+                    <span>Continue with Apple</span>
+                </a>
+                <footer class="register__footer">
+                    By clicking Register or Continue with Google, Facebook, or Apple, you agree to Bozor's <a class="register__footer--link" href="#!">Terms of Use</a> and <a class="register__footer--link" href="#!">Privacy Policy</a>. Bozor may send
+                    you communications; you may change your preferences in your account settings. We'll never post without your permission.
+                </footer>
+            </form>
+        </section>
+
+        <footer class="sitefooter">
+            <div class="container">
+                <div class="sitefooter__inner">
+                    <div class="sitefooter__newsletter newsletter">
+                        <img src="../img/logo.png" alt="sitelogo" class="newsletter__sitelogo" />
+                        <h4 class="newsletter__title">yangiliklar</h4>
+                        <form action="#!" class="newsletter__form">
+                            <label class="newsletter__email-label" for="newsletter__email">
+                                <input id="newsletter__email" type="email" name="newsletter__email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required />
+                                <span class="newsletter__email-placeholder">email adresingiz *</span>
+                                <button class="newsletter__submit" type="submit">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </label>
+                            <label class="newsletter__privacy-label" for="newsletter__privacy">
+                                <span class="newsletter__privacy-wrap">
+                                    <input id="newsletter__privacy" class="visually-hidden" type="checkbox" name="newsletter__privacy" required />
+                                    <i class="fas fa-check"></i>
+                                </span>
+                                <span>
+                                    <a class="privacy-policy" href="#!">Shartlar</a>
+                                    bilan tanishdim, roziman. *
+                                </span>
+                            </label>
+                        </form>
+                    </div>
+                    <div class="sitefooter__links">
+                        <div class="sitefooter__about about">
+                            <h4 class="sitefooter__title about__title">Biz haqimizda</h4>
+                            <ul class="sitefooter__list about__list">
+                                <li class="about__item">
+                                    <a href="#!" class="about__link" data-hover-text="Lorem, ipsum.">
+                                        <span>
+                                            Lorem, ipsum.
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="about__item">
+                                    <a href="#!" class="about__link" data-hover-text="Blanditiis, tempore.">
+                                        <span>
+                                            Blanditiis, tempore.
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="about__item">
+                                    <a href="#!" class="about__link" data-hover-text="Maxime, architecto.">
+                                        <span>
+                                            Maxime, architecto.
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="about__item">
+                                    <a href="#!" class="about__link" data-hover-text="Animi, vitae.">
+                                        <span>
+                                            Animi, vitae.
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sitefooter__info info">
+                            <h4 class="sitefooter__title info__title">Foydali</h4>
+                            <ul class="sitefooter__list info__list">
+                                <li class="info__item">
+                                    <a href="#!" class="info__link" data-hover-text="Lorem, ipsum.">
+                                        <span>
+                                            Lorem, ipsum.
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="info__item">
+                                    <a href="#!" class="info__link" data-hover-text="Blanditiis, tempore.">
+                                        <span>
+                                            Blanditiis, tempore.
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="info__item">
+                                    <a href="#!" class="info__link" data-hover-text="Maxime, architecto.">
+                                        <span>
+                                            Maxime, architecto.
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sitefooter__social social">
+                            <h4 class="sitefooter__title social__title">Ijtimoiy Tarmoqlar</h4>
+                            <ul class="sitefooter__list social__list">
+                                <li class="social__item">
+                                    <a href="#!" class="social__link" data-hover-text="e-bozor">
+                                        <i class="fab fa-telegram-plane"></i>
+                                        <span>e-bozor</span>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="#!" class="social__link" data-hover-text="e-bozor">
+                                        <i class="fab fa-instagram"></i>
+                                        <span>e-bozor</span>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="#!" class="social__link" data-hover-text="e-bozor.uz">
+                                        <i class="fab fa-twitter"></i>
+                                        <span>e-bozor.uz</span>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="#!" class="social__link" data-hover-text="e-bozor.uz">
+                                        <i class="fab fa-facebook-square"></i>
+                                        <span>e-bozor.uz</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="sitefooter__bottom">
+                    <div class="terms">
+                        <a href="#!" data-hover-text="Lorem, ipsum.">
+                            <span>Lorem, ipsum.</span>
+                        </a>
+                        <a href="#!" data-hover-text="Magni, atque.">
+                            <span>Magni, atque.</span>
+                        </a>
+                    </div>
+                    <div class="copyright">
+                        <i class="far fa-copyright"></i>
+                        e-bozor 2020 Barcha huquqlar himoyalangan
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="../js/main.js"></script>
+        <script src="../js/general.js"></script>
+        <script src="../js/helper-top.js"></script>
+        <script src="../js/nav.js"></script>
+        <script src="../js/forms.js"></script>
+    </body>
+</html>

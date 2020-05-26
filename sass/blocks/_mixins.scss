@@ -1,0 +1,400 @@
+@mixin my-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@mixin my-title {
+    font-size: 25px;
+    color: $secondary;
+}
+
+@mixin link-anim {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    outline: none;
+
+    & > span {
+        display: inline-block;
+        transition: 0.3s transform, 0.3s opacity;
+    }
+
+    &::after {
+        content: attr(data-hover-text);
+        position: absolute;
+        left: 0;
+        top: 0;
+        pointer-events: none;
+        transform: translateY(55%);
+        opacity: 0;
+        transition: 0.3s transform, 0.3s opacity;
+    }
+
+    &:hover > span {
+        transform: translateY(-55%);
+        opacity: 0;
+    }
+
+    &:hover::after {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@mixin list-link {
+    display: block;
+    text-decoration: none !important;
+    font-size: 17px;
+    color: rgb(68, 122, 129);
+    transition: 0.15s color, 0.15s background-color;
+    outline: none !important;
+
+    &:hover {
+        color: rgb(63, 110, 116) !important;
+        background-color: rgba(88, 156, 167, 0.123) !important;
+    }
+
+    &:focus {
+        background-color: rgba(97, 170, 182, 0.233) !important;
+    }
+
+    &:hover i {
+        color: rgb(88, 157, 167);
+    }
+}
+
+@mixin product {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    border: 1px solid #eee;
+    border-radius: 7px;
+    padding: 20px;
+    z-index: 200;
+    outline: none;
+    transition: 0.15s border-color linear, 0.15s box-shadow linear;
+
+    &:hover {
+        border-color: $brand-color;
+        box-shadow: 0 0 10px 1px #eee;
+    }
+
+    &__img-wrap {
+        display: block;
+        text-decoration: none !important;
+        z-index: 200;
+        outline: none;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__title {
+        display: block;
+        text-decoration: none !important;
+        outline: none;
+        margin-bottom: 10px;
+    }
+
+    &__title > h4 {
+        text-transform: uppercase;
+        font-size: 16px;
+        color: #999;
+        transition: 0.12s color;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+    &__title:hover > h4 {
+        color: $brand-color;
+    }
+
+    &__text {
+        display: block;
+        text-decoration: none !important;
+        outline: none;
+        margin-bottom: 15px;
+    }
+
+    &__text > div {
+        color: #444;
+        transition: 0.12s color;
+    }
+
+    &__text:hover > div {
+        color: $brand-color;
+    }
+
+    &__anim {
+        transition: 0.3s transform, 0.3s opacity;
+    }
+
+    &:hover &__anim {
+        opacity: 0;
+        transform: translateY(80%);
+    }
+
+    &__rating {
+        margin-bottom: 13px;
+
+        i {
+            font-size: 14px;
+            color: #207888;
+        }
+    }
+
+    &__price {
+        font-weight: bold;
+
+        span {
+            display: inline-block;
+        }
+
+        &--current {
+            color: orangered;
+            margin-right: 7px;
+        }
+
+        &--old {
+            font-weight: lighter;
+            color: #666;
+        }
+    }
+
+    &__discount {
+        position: absolute;
+        display: inline-block;
+        left: 15px;
+        top: 15px;
+        text-transform: lowercase;
+        font-size: 12px;
+        border-radius: 7px;
+        color: $secondary;
+        background-color: rgba($color: yellow, $alpha: 0.5);
+        border: 1px solid $secondary;
+        padding: 3px 7px 4px;
+        font-family: sans-serif;
+    }
+
+    &__new {
+        position: absolute;
+        display: inline-block;
+        left: 15px;
+        top: 15px;
+        text-transform: lowercase;
+        font-size: 12px;
+        border-radius: 7px;
+        color: #fff;
+        background-color: $secondary;
+        padding: 3px 7px 5px;
+        font-family: sans-serif;
+    }
+
+    &:hover &__secondary {
+        background-color: rgba($color: #fff, $alpha: 0.3);
+    }
+
+    &__btns {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    &__btn {
+        position: absolute;
+        top: 65px;
+        right: 20px;
+        display: inline-block;
+        border: none;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        padding: 4px;
+        background-color: $text;
+        color: #2cabc2;
+        border: 1px solid $brand-color;
+        outline: none !important;
+        transform: scale(0);
+        z-index: 202;
+        opacity: 0;
+        transition: 0.3s transform ease-out, 0.15s opacity linear, 0.15s color linear, 0.15s background-color linear;
+
+        &:first-child {
+            top: 20px;
+        }
+
+        &:hover {
+            color: $text;
+            background-color: #2cabc2;
+        }
+    }
+
+    &:hover &__btn {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    &__actions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__action {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 25px;
+        width: calc(100% - 40px);
+        border-radius: 7px;
+        outline: none !important;
+        border: none;
+        padding: 10px 15px;
+        font-size: 14px;
+        color: $text;
+        background-color: #66bbc6;
+        z-index: 202;
+        opacity: 0;
+        transition: 0.3s opacity ease-in, 0.15s background-color linear;
+
+        &:first-child {
+            bottom: 70px;
+        }
+
+        &:hover {
+            background-color: #207888;
+        }
+
+        &:disabled {
+            cursor: not-allowed;
+            background-color: #8eaaad;
+        }
+    }
+
+    &:hover &__action {
+        opacity: 1;
+    }
+
+    &__action:last-child {
+        transition-delay: 0.13s;
+    }
+
+    &__action:last-child:hover {
+        transition-delay: 0s;
+    }
+}
+
+@mixin header {
+    &__header {
+        padding: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        margin: 0;
+        margin-right: 10px;
+        font-size: 22px;
+        color: $secondary;
+    }
+
+    &__rule {
+        background-color: $brand-color;
+        margin: 0;
+        flex-grow: 1;
+    }
+
+    &__controls {
+        display: inline-flex;
+        border: 1px solid $secondary;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    &__control {
+        cursor: pointer;
+        color: $secondary;
+        border: none;
+        background-color: transparent;
+        outline: none !important;
+        padding: 2px 7px 1px;
+    }
+}
+
+// ! for forms
+@mixin form-settings {
+    padding: 50px;
+    width: 500px;
+    margin: 0 auto;
+
+    &__header {
+        margin-bottom: 25px;
+    }
+
+    &__title {
+        font-size: 27px;
+        color: $secondary;
+        margin-bottom: 5px;
+    }
+
+    &__lead {
+        font-size: 15px;
+        color: rgb(49, 153, 167);
+    }
+
+    &__form {
+        width: 100%;
+    }
+
+    &__submit {
+        color: $text;
+        background-color: $brand-color;
+        transition: 0.2s background-color !important;
+        border: none !important;
+
+        &:hover,
+        &:focus {
+            background-color: rgb(32, 172, 190);
+        }
+    }
+
+    &__social {
+        text-decoration: none;
+        font-weight: bold;
+        color: $secondary;
+        transition: 0.25s background-color !important;
+
+        &:hover {
+            background-color: rgba(24, 206, 230, 0.05);
+        }
+
+        & > img {
+            width: 18px;
+            margin-right: 10px;
+        }
+    }
+
+    &__footer {
+        margin-top: 30px;
+        line-height: 1.4;
+        color: #595959;
+        font-size: 14px;
+
+        &--link {
+            color: $secondary;
+        }
+    }
+
+    a {
+        outline: none;
+    }
+
+    @media (max-width: 400px) {
+        &__title {
+            font-size: 25px;
+        }
+    }
+}

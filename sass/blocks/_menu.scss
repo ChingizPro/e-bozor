@@ -1,0 +1,142 @@
+.menu {
+    width: 270px;
+
+    &__header {
+        font-family: "Chromia";
+        padding: 19px 24px;
+        background-color: rgb(71, 125, 133);
+        color: $text;
+        margin-bottom: 4px;
+
+        span {
+            font-size: 17px;
+        }
+
+        i {
+            margin-right: 7px;
+        }
+    }
+
+    &__list {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.07);
+    }
+
+    &__link {
+        @include list-link;
+
+        padding: 13px 40px 13px 16px;
+
+        i {
+            font-size: 20px;
+            color: rgb(97, 175, 185);
+            transition: 0.15s color;
+        }
+    }
+
+    &__icon-wrap {
+        display: inline-block;
+        width: 30px;
+        text-align: center;
+    }
+
+    .more-item {
+        position: relative;
+
+        i {
+            font-size: 18px;
+        }
+
+        button {
+            width: 100%;
+            border: none;
+            background-color: $text;
+            text-align: left;
+
+            .menu__icon-wrap {
+                text-align: center;
+            }
+        }
+    }
+
+    .hidden-item {
+        max-height: 0;
+        display: none;
+        opacity: 0;
+        overflow: hidden;
+
+        transition: 0.5s max-height, 0.7s opacity;
+    }
+}
+
+.has-list {
+    position: relative;
+    transition: 0.15s background-color;
+}
+
+.inner-sign {
+    position: absolute;
+    font-size: 14px !important;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 25px;
+    transition: 0.15s transform, 0.15s color !important;
+}
+
+.has-list:hover {
+    background-color: rgba(88, 156, 167, 0.123);
+}
+
+@keyframes show-item {
+    0% {
+        opacity: 0;
+        transform: rotateX(90deg) scale(0);
+    }
+
+    33% {
+        opacity: 0.33;
+        transform: rotateX(60deg) scale(0.33);
+    }
+
+    66% {
+        opacity: 0.66;
+        transform: rotateX(30deg) scale(0.66);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotateX(0) scale(1);
+    }
+}
+
+@media (max-width: 1000px) {
+    .menu__header {
+        padding: 18px 23px;
+
+        span {
+            font-size: 16.5px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .menu__header {
+        padding: 17px 18px;
+        padding-left: 22px;
+
+        i {
+            margin-right: 5px;
+        }
+
+        span {
+            font-size: 16px;
+        }
+    }
+
+    .menu__link {
+        padding: 10px 35px 10px 13px;
+        font-size: 16px;
+    }
+}

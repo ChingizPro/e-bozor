@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="uz">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bozor</title>
+        <link rel="shortcut icon" href="img/icon.PNG" />
+        <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+        <link rel="stylesheet" href="slick/slick.css" />
+        <link rel="stylesheet" href="css/main.css" />
+    </head>
+    <body id="body">
+        <!-- ! progress display -->
+        <div class="progress-container">
+            <div class="progress-bar" id="progress"></div>
+        </div>
+
+        <div class="helper">
+            <div class="container helper__inner">
+                <div class="helper__left">
+                    <div class="helper__email"><span>Email: </span>info@e-bozor.uz</div>
+                    <div class="helper__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat!</div>
+                </div>
+                <div class="helper__right">
+                    <div class="helper__dropdown">
+                        <button class="helper__button">
+                            Til
+                            <i class="helper__dropdown--icon fas fa-chevron-down"></i>
+                        </button>
+                        <ul class="lang helper__dropdown-list">
+                            <li class="helper__dropdown-item">
+                                <a href="#!" data-lang="uz">O'zbekcha</a>
+                            </li>
+                            <li class="helper__dropdown-item">
+                                <a href="#!" data-lang="ru">Русский</a>
+                            </li>
+                            <li class="helper__dropdown-item">
+                                <a href="#!" data-lang="en">English</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="helper__link" href="sign-up.html" id="sign-up">Sign Up</a>
+                </div>
+            </div>
+        </div>
+
+        <header class="siteheader container">
+            <div class="siteheader__left">
+                <a href="#" class="sitelogo"><img src="img/logo.png" alt="sitelogo" /></a>
+                <form action="#!" class="siteheader__search">
+                    <input type="search" class="siteheader__search--input" placeholder="Izlash..." aria-label="Search input" />
+                    <button type="submit" class="siteheader__search--button">Qidirish</button>
+                </form>
+            </div>
+            <div class="siteheader__right">
+                <div class="compare">
+                    <a href="#!" class="siteheader__right--link compare__link">
+                        <i class="fas fa-store"></i>
+                        <span>Taqqoslash</span>
+                    </a>
+                </div>
+                <div class="cart">
+                    <a href="#!" class="siteheader__right--link cart__link">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>Savatcha</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <nav class="sitenav">
+            <div class="sitenav__inner container">
+                <button class="sitenav__menu-opener">
+                    <i class="fas fa-ellipsis-h"></i>
+                </button>
+                <ul class="sitenav__list">
+                    <li class="sitenav__item">
+                        <a class="sitenav__link" href="#!" data-hover-text="Bosh sahifa">
+                            <span>Bosh sahifa</span>
+                        </a>
+                    </li>
+                    <li class="sitenav__item">
+                        <a class="sitenav__link" href="html/products.html" data-hover-text="Chegirmalar">
+                            <span>Chegirmalar</span>
+                        </a>
+                    </li>
+                    <li class="sitenav__item">
+                        <a class="sitenav__link" href="html/news.html" data-hover-text="Yangiliklar">
+                            <span>Yangiliklar</span>
+                        </a>
+                    </li>
+                    <li class="sitenav__item">
+                        <a class="sitenav__link" href="html/rules.html" data-hover-text="Foydalanish qoidalari">
+                            <span>Foydalanish qoidalari</span>
+                        </a>
+                    </li>
+                    <li class="sitenav__item">
+                        <a class="sitenav__link" href="html/contact.html" data-hover-text="Biz bilan aloqa">
+                            <span>Biz bilan aloqa</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="phone-call">
+                    <a href="tel:+998338778787">
+                        <i class="fas fa-phone-alt"></i>
+                        +998338778787
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <section class="banner container">
+            <div class="menu">
+                <header class="menu__header">
+                    <i class="fas fa-bars"></i>
+                    <span>Kategoriyalar</span>
+                </header>
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a href="#!" class="menu__link">
+                            <span class="menu__icon-wrap">
+                                <i class="fas fa-book"></i>
+                            </span>
+                            Kitoblar
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#!" class="menu__link">
+                            <span class="menu__icon-wrap">
+                                <i class="fas fa-mobile-alt"></i>
+                            </span>
+                            Telefonlar
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#!" class="menu__link">
+                            <span class="menu__icon-wrap">
+                                <i class="fas fa-pump-soap"></i>
+                            </span>
+                            Gigiyenik tovarlar
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#!" class="menu__link">
+                            <span class="menu__icon-wrap">
+                                <i class="far fa-lightbulb"></i>
+                            </span>
+                            Maishiy texnika
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#!" class="menu__link">
+                            <span class="menu__icon-wrap">
+                                <i class="fas fa-laptop-code"></i>
+                            </span>
+                            Kompyuterlar
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#!" class="menu__link">
+                            <span class="menu__icon-wrap">
+                                <i class="fas fa-fan"></i>
+                            </span>
+                            Konditsionerlar
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#!" class="menu__link">
+                            <span class="menu__icon-wrap">
+                                <i class="fas fa-tv"></i>
+                            </span>
+                            Televizorlar
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#!" class="menu__link">
+                            <span class="menu__icon-wrap">
+                                <i class="fas fa-blender"></i>
+                            </span>
+                            Oshxona uchun
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="#!" class="menu__link">
+                            <span class="menu__icon-wrap">
+                                <i class="fas fa-coffee"></i>
+                            </span>
+                            Idish-tovoq
+                        </a>
+                    </li>
+                    <li class="menu__item hidden-item">
+                        <a href="#!" class="menu__link">
+                            <span class="menu__icon-wrap">
+                                <i class="fas fa-print"></i>
+                            </span>
+                            Uy va ofis uchun
+                        </a>
+                    </li>
+                    <li class="menu__item hidden-item">
+                        <a href="#!" class="menu__link">
+                            <span class="menu__icon-wrap">
+                                <i class="fas fa-satellite-dish"></i>
+                            </span>
+                            Raqamli televideniya
+                        </a>
+                    </li>
+                    <li class="menu__item hidden-item">
+                        <a href="#!" class="menu__link">
+                            <span class="menu__icon-wrap">
+                                <i class="fas fa-heartbeat"></i>
+                            </span>
+                            Go'zallik va sog'lik
+                        </a>
+                    </li>
+                    <li class="menu__item hidden-item">
+                        <a href="#!" class="menu__link">
+                            <span class="menu__icon-wrap">
+                                <i class="fas fa-car-crash"></i>
+                            </span>
+                            Avtotovarlar
+                        </a>
+                    </li>
+                    <li class="menu__item hidden-item">
+                        <a href="#!" class="menu__link">
+                            <span class="menu__icon-wrap">
+                                <i class="fas fa-couch"></i>
+                            </span>
+                            Mebellar
+                        </a>
+                    </li>
+                    <li class="menu__item more-item">
+                        <button href="#!" class="menu__link">
+                            <span class="menu__icon-wrap">
+                                <i class="fas fa-plus"></i>
+                            </span>
+                            <span class="more-item__text">Qo'shimcha</span>
+                            <i class="inner-sign fas fa-bars"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide">
+                        <img src="img/smartphone.jpg" alt="smartphone xiaomi" class="slide__img" />
+                        <div class="slide__layer">
+                            <h3 class="slide__title">Lorem ipsum dolor sit.</h3>
+                            <p class="slide__text">Lorem ipsum dolor sit amet.</p>
+                            <button class="slide__buy">Sotib olish</button>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="img/washing car.jpg" alt="washing car" class="slide__img" />
+                        <div class="slide__layer">
+                            <h3 class="slide__title">Et, soluta! Nisi, itaque!</h3>
+                            <p class="slide__text">Numquam, natus? Facere, deserunt nesciunt.</p>
+                            <button class="slide__buy">Sotib olish</button>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="img/laptop.jpg" alt="laptop asus" class="slide__img" />
+                        <div class="slide__layer">
+                            <h3 class="slide__title">Quos provident error eius.</h3>
+                            <p class="slide__text">Veniam fugiat minima accusamus consequatur.</p>
+                            <button class="slide__buy">Sotib olish</button>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="img/camera.jpg" alt="camera canon" class="slide__img" />
+                        <div class="slide__layer">
+                            <h3 class="slide__title">Excepturi possimus veniam voluptatibus.</h3>
+                            <p class="slide__text">Repellendus ullam doloremque omnis error.</p>
+                            <button class="slide__buy">Sotib olish</button>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="img/tv.jpg" alt="tv aorus" class="slide__img" />
+                        <div class="slide__layer">
+                            <h3 class="slide__title">Sint id corrupti maxime.</h3>
+                            <p class="slide__text">Distinctio doloremque ducimus quidem amet?</p>
+                            <button class="slide__buy">Sotib olish</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider__controls">
+                    <button class="slider__control slider__control--prev">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="slider__control slider__control--next">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <div class="slider__buttons"></div>
+            </div>
+        </section>
+
+        <section class="general container">
+            <aside class="general__aside">
+                <!-- ! discounts slider -->
+                <div class="my-slider discounts-slider">
+                    <header class="my-slider__header">
+                        <h4 class="my-slider__title">Chegirmalar</h4>
+                        <hr class="my-slider__rule" />
+                        <div class="my-slider__controls">
+                            <div class="my-slider__control my-slider__control--prev">
+                                <i class="fas fa-arrow-left"></i>
+                            </div>
+                            <div class="my-slider__control my-slider__control--next">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="articles my-slides">
+                        <div id="last-clone" class="my-slide">
+                            <div class="discount">
+                                <div class="discount__main">
+                                    <a class="discount__img-wrap" href="#!">
+                                        <img src="img/artel air conditioner.jpg" alt="artel air conditioner" class="discount__img" />
+                                    </a>
+                                    <a class="discount__title" href="#!">
+                                        <h4>Artel</h4>
+                                    </a>
+                                    <a class="discount__text" href="#!">
+                                        <div>Lorem ipsum dolor sit, amet consectetur adipisicing.</div>
+                                    </a>
+                                    <div class="discount__anim">
+                                        <div class="discount__rating">
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="discount__price">
+                                            <span class="discount__price--current">2 538 464</span>
+                                            <span class="discount__price--old"><del>2 977 765</del></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="discount__btns">
+                                    <button class="discount__btn discount__compare-button">
+                                        <i class="fas fa-spinner"></i>
+                                    </button>
+                                    <button class="discount__btn discount__search-button">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                                <div class="discount__actions">
+                                    <button class="discount__action">Kreditga</button>
+                                    <button class="discount__action to-cart">Savatchaga</button>
+                                </div>
+                                <span class="discount__discount">Chegirma</span>
+                            </div>
+                        </div>
+                        <div class="my-slide">
+                            <div class="discount">
+                                <div class="discount__main">
+                                    <a class="discount__img-wrap" href="#!">
+                                        <img src="img/xiaomi stove.jpg" alt="xiaomi stove" class="discount__img" />
+                                    </a>
+                                    <a class="discount__title" href="#!">
+                                        <h4>Xiaomi</h4>
+                                    </a>
+                                    <a class="discount__text" href="#!">
+                                        <div>Lorem ipsum dolor sit, amet consectetur adipisicing.</div>
+                                    </a>
+                                    <div class="discount__anim">
+                                        <div class="discount__rating">
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="discount__price">
+                                            <span class="discount__price--current">1 754 233</span>
+                                            <span class="discount__price--old"><del>1 917 856</del></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="discount__btns">
+                                    <button class="discount__btn discount__compare-button">
+                                        <i class="fas fa-spinner"></i>
+                                    </button>
+                                    <button class="discount__btn discount__search-button">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                                <div class="discount__actions">
+                                    <button class="discount__action">Kreditga</button>
+                                    <button class="discount__action to-cart" data-id="1">Savatchaga</button>
+                                </div>
+                                <span class="discount__discount">Chegirma</span>
+                            </div>
+                        </div>
+                        <div class="my-slide">
+                            <div class="discount">
+                                <div class="discount__main">
+                                    <a class="discount__img-wrap" href="#!">
+                                        <img src="img/samsung washing machine.jpg" alt="samsung washing machine" class="discount__img" />
+                                    </a>
+                                    <a class="discount__title" href="#!">
+                                        <h4>Samsung</h4>
+                                    </a>
+                                    <a class="discount__text" href="#!">
+                                        <div>Lorem ipsum dolor sit, amet consectetur adipisicing.</div>
+                                    </a>
+                                    <div class="discount__anim">
+                                        <div class="discount__rating">
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="discount__price">
+                                            <span class="discount__price--current">3 873 264</span>
+                                            <span class="discount__price--old"><del>4 092 393</del></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="discount__btns">
+                                    <button class="discount__btn discount__compare-button">
+                                        <i class="fas fa-spinner"></i>
+                                    </button>
+                                    <button class="discount__btn discount__search-button">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                                <div class="discount__actions">
+                                    <button class="discount__action">Kreditga</button>
+                                    <button class="discount__action to-cart" data-id="2">Savatchaga</button>
+                                </div>
+                                <span class="discount__discount">Chegirma</span>
+                            </div>
+                        </div>
+                        <div class="my-slide">
+                            <div class="discount">
+                                <div class="discount__main">
+                                    <a class="discount__img-wrap" href="#!">
+                                        <img src="img/artel air conditioner.jpg" alt="artel air conditioner" class="discount__img" />
+                                    </a>
+                                    <a class="discount__title" href="#!">
+                                        <h4>Artel</h4>
+                                    </a>
+                                    <a class="discount__text" href="#!">
+                                        <div>Lorem ipsum dolor sit, amet consectetur adipisicing.</div>
+                                    </a>
+                                    <div class="discount__anim">
+                                        <div class="discount__rating">
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="discount__price">
+                                            <span class="discount__price--current">2 538 464</span>
+                                            <span class="discount__price--old"><del>2 977 765</del></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="discount__btns">
+                                    <button class="discount__btn discount__compare-button">
+                                        <i class="fas fa-spinner"></i>
+                                    </button>
+                                    <button class="discount__btn discount__search-button">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                                <div class="discount__actions">
+                                    <button class="discount__action">Kreditga</button>
+                                    <button class="discount__action to-cart" data-id="3">Savatchaga</button>
+                                </div>
+                                <span class="discount__discount">Chegirma</span>
+                            </div>
+                        </div>
+                        <div id="first-clone" class="my-slide">
+                            <div class="discount">
+                                <div class="discount__main">
+                                    <a class="discount__img-wrap" href="#!">
+                                        <img src="img/xiaomi stove.jpg" alt="xiaomi stove" class="discount__img" />
+                                    </a>
+                                    <a class="discount__title" href="#!">
+                                        <h4>Xiaomi</h4>
+                                    </a>
+                                    <a class="discount__text" href="#!">
+                                        <div>Lorem ipsum dolor sit, amet consectetur adipisicing.</div>
+                                    </a>
+                                    <div class="discount__anim">
+                                        <div class="discount__rating">
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                        <div class="discount__price">
+                                            <span class="discount__price--current">1 754 233</span>
+                                            <span class="discount__price--old"><del>1 917 856</del></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="discount__btns">
+                                    <button class="discount__btn discount__compare-button">
+                                        <i class="fas fa-spinner"></i>
+                                    </button>
+                                    <button class="discount__btn discount__search-button">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                                <div class="discount__actions">
+                                    <button class="discount__action">Kreditga</button>
+                                    <button class="discount__action to-cart">Savatchaga</button>
+                                </div>
+                                <span class="discount__discount">Chegirma</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- *** -->
+                <!-- ! news-slider -->
+                <div class="my-slider news-slider">
+                    <header class="my-slider__header">
+                        <h4 class="my-slider__title">Yangiliklar</h4>
+                        <hr class="my-slider__rule" />
+                        <div class="my-slider__controls">
+                            <div class="my-slider__control my-slider__control--prev">
+                                <i class="fas fa-arrow-left"></i>
+                            </div>
+                            <div class="my-slider__control my-slider__control--next">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="articles my-slides">
+                        <div class="my-slide" id="last-clone">
+                            <article class="news">
+                                <a href="#!" class="news__img-wrap">
+                                    <img src="img/codes.jpg" alt="map" class="news__img" />
+                                </a>
+                                <div class="news__content">
+                                    <div class="news__date-wrap">
+                                        <time class="news__date" datetime="2020-01-01T09:30">01.01.2020</time>
+                                    </div>
+                                    <a href="#!" class="news__title-wrap">
+                                        <h5 class="news__title">Biscuit cake caramels gummi bears chocolate cake chocolate cake gingerbread.</h5>
+                                    </a>
+                                    <hr class="news__separator" />
+                                    <p class="news__text">
+                                        Jelly beans lemon drops tiramisu liquorice. Topping cheesecake toffee candy jelly. Bear claw marshmallow biscuit muffin gingerbread marzipan dragée lemon drops. Pudding cake chocolate bar. Pudding toffee
+                                        macaroon soufflé.
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="my-slide">
+                            <article class="news">
+                                <a href="#!" class="news__img-wrap">
+                                    <img src="img/apps.jpg" alt="map" class="news__img" />
+                                </a>
+                                <div class="news__content">
+                                    <div class="news__date-wrap">
+                                        <time class="news__date" datetime="2020-01-01T09:30">01.01.2020</time>
+                                    </div>
+                                    <a href="#!" class="news__title-wrap">
+                                        <h5 class="news__title">Halvah icing fruitcake wafer jelly beans chocolate cake pastry pie sweet.</h5>
+                                    </a>
+                                    <hr class="news__separator" />
+                                    <p class="news__text">
+                                        Croissant liquorice jujubes bear claw dessert biscuit macaroon marzipan muffin. Ice cream danish donut. Gingerbread bonbon chocolate brownie bear claw. Soufflé liquorice bonbon jelly-o macaroon. Sweet chocolate
+                                        chocolate bar pie.
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="my-slide">
+                            <article class="news">
+                                <a href="#!" class="news__img-wrap">
+                                    <img src="img/satellite.jpg" alt="satellite" class="news__img" />
+                                </a>
+                                <div class="news__content">
+                                    <div class="news__date-wrap">
+                                        <time class="news__date" datetime="2020-01-01T09:30">01.01.2020</time>
+                                    </div>
+                                    <a href="#!" class="news__title-wrap">
+                                        <h5 class="news__title">Taleggio mascarpone ricotta goat cow cut the cheese everyone loves it.</h5>
+                                    </a>
+                                    <hr class="news__separator" />
+                                    <p class="news__text">
+                                        Cheese strings stinking bishop everyone loves stinking bishop cheesy feet mozzarella parmesan st. agur blue cheese. Brie cheddar cheese and biscuits goat cheese and wine queso say cheese cheesy feet. Queso
+                                        swiss happy lancashire.
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="my-slide">
+                            <article class="news">
+                                <a href="#!" class="news__img-wrap">
+                                    <img src="img/bulbs.jpg" alt="map" class="news__img" />
+                                </a>
+                                <div class="news__content">
+                                    <div class="news__date-wrap">
+                                        <time class="news__date" datetime="2020-01-01T09:30">01.01.2020</time>
+                                    </div>
+                                    <a href="#!" class="news__title-wrap">
+                                        <h5 class="news__title">Cookie chocolate cake jelly donut. Brownie oat cake fruitcake cheesecake danish.</h5>
+                                    </a>
+                                    <hr class="news__separator" />
+                                    <p class="news__text">
+                                        Toffee cheesecake pudding gingerbread. Lollipop pastry sugar plum. Topping sugar plum jujubes jelly beans. Sesame snaps croissant cheesecake muffin gummies carrot cake chocolate candy. Cotton candy bear claw
+                                        chocolate bar.
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="my-slide">
+                            <article class="news">
+                                <a href="#!" class="news__img-wrap">
+                                    <img src="img/codes.jpg" alt="map" class="news__img" />
+                                </a>
+                                <div class="news__content">
+                                    <div class="news__date-wrap">
+                                        <time class="news__date" datetime="2020-01-01T09:30">01.01.2020</time>
+                                    </div>
+                                    <a href="#!" class="news__title-wrap">
+                                        <h5 class="news__title">Biscuit cake caramels gummi bears chocolate cake chocolate cake gingerbread.</h5>
+                                    </a>
+                                    <hr class="news__separator" />
+                                    <p class="news__text">
+                                        Jelly beans lemon drops tiramisu liquorice. Topping cheesecake toffee candy jelly. Bear claw marshmallow biscuit muffin gingerbread marzipan dragée lemon drops. Pudding cake chocolate bar. Pudding toffee
+                                        macaroon soufflé.
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="my-slide" id="first-clone">
+                            <article class="news">
+                                <a href="#!" class="news__img-wrap">
+                                    <img src="img/apps.jpg" alt="map" class="news__img" />
+                                </a>
+                                <div class="news__content">
+                                    <div class="news__date-wrap">
+                                        <time class="news__date" datetime="2020-01-01T09:30">01.01.2020</time>
+                                    </div>
+                                    <a href="#!" class="news__title-wrap">
+                                        <h5 class="news__title">Halvah icing fruitcake wafer jelly beans chocolate cake pastry pie sweet.</h5>
+                                    </a>
+                                    <hr class="news__separator" />
+                                    <p class="news__text">
+                                        Croissant liquorice jujubes bear claw dessert biscuit macaroon marzipan muffin. Ice cream danish donut. Gingerbread bonbon chocolate brownie bear claw. Soufflé liquorice bonbon jelly-o macaroon. Sweet chocolate
+                                        chocolate bar pie.
+                                    </p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <div class="main general__main">
+                <div class="order">
+                    <h2 class="order__title">Buyurtma berish tartibi:</h2>
+                    <div class="order__content">
+                        <div class="order__step">
+                            <div class="order__pic">
+                                <i class="fas fa-hand-point-up"></i>
+                            </div>
+                            <div class="order__body">
+                                <h3 class="order__body--title">1-bosqich</h3>
+                                <div class="order__text">Lorem ipsum dolor sit amet consectetur.</div>
+                            </div>
+                        </div>
+                        <div class="order__step">
+                            <div class="order__pic">
+                                <i class="fas fa-cart-plus"></i>
+                            </div>
+                            <div class="order__body">
+                                <h3 class="order__body--title">2-bosqich</h3>
+                                <div class="order__text">Consequuntur unde voluptatibus ab.</div>
+                            </div>
+                        </div>
+                        <div class="order__step">
+                            <div class="order__pic">
+                                <i class="fas fa-clipboard-list"></i>
+                            </div>
+                            <div class="order__body">
+                                <h3 class="order__body--title">3-bosqich</h3>
+                                <div class="order__text">Aliquid distinctio nostrum harum eligendi.</div>
+                            </div>
+                        </div>
+                        <div class="order__step">
+                            <div class="order__pic">
+                                <i class="fas fa-box-open"></i>
+                            </div>
+                            <div class="order__body">
+                                <h3 class="order__body--title">4-bosqich</h3>
+                                <div class="order__text">Nemo quo omnis adipisci sint non!</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="new-products">
+                    <header class="new-products__header">
+                        <h2 class="new-products__title">Yangi Mahsulotlar</h2>
+                        <hr class="new-products__rule" />
+                        <div class="new-products__controls">
+                            <div class="new-products__control new-products__control--prev">
+                                <i class="fas fa-arrow-left"></i>
+                            </div>
+                            <div class="new-products__control new-products__control--next">
+                                <i class="fas fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="products">
+                        <div class="product">
+                            <div class="product__main">
+                                <a class="product__img-wrap" href="#!">
+                                    <img src="img/mac pro 16.jpg" alt="mac pro 16" class="product__img" />
+                                </a>
+                                <a class="product__title" href="#!">
+                                    <h4>Apple</h4>
+                                </a>
+                                <a class="product__text" href="#!">
+                                    <div>Lorem ipsum dolor sit, amet consectetur adipisicing.</div>
+                                </a>
+                                <div class="product__anim">
+                                    <div class="product__rating">
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="product__price">
+                                        <span class="product__price--current">10 947 577</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__btns">
+                                <button class="product__btn product__compare-button">
+                                    <i class="fas fa-spinner"></i>
+                                </button>
+                                <button class="product__btn product__search-button">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                            <div class="product__actions">
+                                <button class="product__action product__action--credit">Kreditga</button>
+                                <button class="product__action product__action--cart" data-number="0">Savatchaga</button>
+                            </div>
+                            <span class="product__new">New</span>
+                        </div>
+                        <div class="product">
+                            <div class="product__main">
+                                <a class="product__img-wrap" href="#!">
+                                    <img src="img/xiaomi quartz.jpg" alt="xiaomi quartz" class="product__img" />
+                                </a>
+                                <a class="product__title" href="#!">
+                                    <h4>Xiaomi</h4>
+                                </a>
+                                <a class="product__text" href="#!">
+                                    <div>Lorem ipsum dolor sit, amet consectetur adipisicing.</div>
+                                </a>
+                                <div class="product__anim">
+                                    <div class="product__rating">
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="product__price">
+                                        <span class="product__price--current">3 172 864</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__btns">
+                                <button class="product__btn product__compare-button">
+                                    <i class="fas fa-spinner"></i>
+                                </button>
+                                <button class="product__btn product__search-button">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                            <div class="product__actions">
+                                <button class="product__action product__action--credit">Kreditga</button>
+                                <button class="product__action product__action--cart" data-number="1">Savatchaga</button>
+                            </div>
+                            <span class="product__new">New</span>
+                        </div>
+                        <div class="product">
+                            <div class="product__main">
+                                <a class="product__img-wrap" href="#!">
+                                    <img src="img/lg fridge.jpg" alt="lg fridge" class="product__img" />
+                                </a>
+                                <a class="product__title" href="#!">
+                                    <h4>LG</h4>
+                                </a>
+                                <a class="product__text" href="#!">
+                                    <div>Lorem ipsum dolor sit, amet consectetur adipisicing.</div>
+                                </a>
+                                <div class="product__anim">
+                                    <div class="product__rating">
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="product__price">
+                                        <span class="product__price--current">5 421 000</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__btns">
+                                <button class="product__btn product__compare-button">
+                                    <i class="fas fa-spinner"></i>
+                                </button>
+                                <button class="product__btn product__search-button">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                            <div class="product__actions">
+                                <button class="product__action product__action--credit">Kreditga</button>
+                                <button class="product__action product__action--cart" data-number="2">Savatchaga</button>
+                            </div>
+                            <span class="product__new">New</span>
+                        </div>
+                        <div class="product">
+                            <div class="product__main">
+                                <a class="product__img-wrap" href="#!">
+                                    <img src="img/beko gas cooker.jpg" alt="beko gas cooker" class="product__img" />
+                                </a>
+                                <a class="product__title" href="#!">
+                                    <h4>Beko</h4>
+                                </a>
+                                <a class="product__text" href="#!">
+                                    <div>Lorem ipsum dolor sit, amet consectetur adipisicing.</div>
+                                </a>
+                                <div class="product__anim">
+                                    <div class="product__rating">
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="product__price">
+                                        <span class="product__price--current">3 121 878</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__btns">
+                                <button class="product__btn product__compare-button">
+                                    <i class="fas fa-spinner"></i>
+                                </button>
+                                <button class="product__btn product__search-button">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                            <div class="product__actions">
+                                <button class="product__action product__action--credit">Kreditga</button>
+                                <button class="product__action product__action--cart" data-number="3">Savatchaga</button>
+                            </div>
+                            <span class="product__new">New</span>
+                        </div>
+                        <div class="product">
+                            <div class="product__main">
+                                <a class="product__img-wrap" href="#!">
+                                    <img src="img/iphone 11 pro max.png" alt="iphone 11 pro max" class="product__img" />
+                                </a>
+                                <a class="product__title" href="#!">
+                                    <h4>Apple</h4>
+                                </a>
+                                <a class="product__text" href="#!">
+                                    <div>Lorem ipsum dolor sit, amet consectetur adipisicing.</div>
+                                </a>
+                                <div class="product__anim">
+                                    <div class="product__rating">
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="product__price">
+                                        <span class="product__price--current">7 679 965</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__btns">
+                                <button class="product__btn product__compare-button">
+                                    <i class="fas fa-spinner"></i>
+                                </button>
+                                <button class="product__btn product__search-button">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                            <div class="product__actions">
+                                <button class="product__action product__action--credit">Kreditga</button>
+                                <button class="product__action product__action--cart" data-number="4">Savatchaga</button>
+                            </div>
+                            <span class="product__new">New</span>
+                        </div>
+                        <div class="product">
+                            <div class="product__main">
+                                <a class="product__img-wrap" href="#!">
+                                    <img src="img/tcl air conditioner.jpg" alt="tcl air conditioner" class="product__img" />
+                                </a>
+                                <a class="product__title" href="#!">
+                                    <h4>TCL</h4>
+                                </a>
+                                <a class="product__text" href="#!">
+                                    <div>Lorem ipsum dolor sit, amet consectetur adipisicing.</div>
+                                </a>
+                                <div class="product__anim">
+                                    <div class="product__rating">
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                    <div class="product__price">
+                                        <span class="product__price--current">2 878 987</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__btns">
+                                <button class="product__btn product__compare-button">
+                                    <i class="fas fa-spinner"></i>
+                                </button>
+                                <button class="product__btn product__search-button">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                            <div class="product__actions">
+                                <button class="product__action product__action--credit">Kreditga</button>
+                                <button class="product__action product__action--cart" data-number="5">Savatchaga</button>
+                            </div>
+                            <span class="product__new">New</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="recommends">
+                    <h2 class="recommends__title">Tavsiya Etamiz</h2>
+                    <div class="recommends__collection">
+                        <div class="recommend">
+                            <img src="img/xiaomi earphone.jpg" alt="xiaomi earphones" class="recommend__img" />
+                            <div class="recommend__body">
+                                <a href="#!" class="recommend__title">xiaomi earphones</a>
+                                <div class="recommend__info">
+                                    Molestiae ipsam voluptate laboriosam.
+                                </div>
+                                <div class="recommend__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="recommend__price">143 299</div>
+                            </div>
+                        </div>
+                        <div class="recommend">
+                            <img src="img/huawei speaker.jpg" alt="huawei speaker" class="recommend__img" />
+                            <div class="recommend__body">
+                                <a href="#!" class="recommend__title">huawei speaker</a>
+                                <div class="recommend__info">
+                                    Molestiae ipsam voluptate laboriosam.
+                                </div>
+                                <div class="recommend__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <div class="recommend__price">207 543</div>
+                            </div>
+                        </div>
+                        <div class="recommend">
+                            <img src="img/sandisk usb.jpg" alt="sandisk usb" class="recommend__img" />
+                            <div class="recommend__body">
+                                <a href="#!" class="recommend__title">sandisk USB</a>
+                                <div class="recommend__info">
+                                    Molestiae ipsam voluptate laboriosam.
+                                </div>
+                                <div class="recommend__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <div class="recommend__price">56 926</div>
+                            </div>
+                        </div>
+                        <div class="recommend">
+                            <img src="img/rog mouse.jpg" alt="rog mouse" class="recommend__img" />
+                            <div class="recommend__body">
+                                <a href="#!" class="recommend__title">rog mouse</a>
+                                <div class="recommend__info">
+                                    Molestiae ipsam voluptate laboriosam.
+                                </div>
+                                <div class="recommend__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <div class="recommend__price">123 000</div>
+                            </div>
+                        </div>
+                        <div class="recommend">
+                            <img src="img/oppo smart watch.jpg" alt="opp smart watch" class="recommend__img" />
+                            <div class="recommend__body">
+                                <a href="#!" class="recommend__title">oppo smart watch</a>
+                                <div class="recommend__info">
+                                    Molestiae ipsam voluptate laboriosam.
+                                </div>
+                                <div class="recommend__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <div class="recommend__price">563 879</div>
+                            </div>
+                        </div>
+                        <div class="recommend">
+                            <img src="img/mi power bank.jpg" alt="mi power bank" class="recommend__img" />
+                            <div class="recommend__body">
+                                <a href="#!" class="recommend__title">mi power bank</a>
+                                <div class="recommend__info">
+                                    Molestiae ipsam voluptate laboriosam.
+                                </div>
+                                <div class="recommend__rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                                <div class="recommend__price">121 200</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <section class="payments">
+                <header class="payments__header">
+                    <h3 class="payments__title">Biz qabul qilamiz:</h3>
+                </header>
+                <div class="payments__collection">
+                    <img src="img/payme logo.png" alt="payme logo" class="payment" />
+                    <img src="img/click logo.png" alt="click logo" class="payment" />
+                    <img src="img/mastercard logo.png" alt="mastercard logo" class="payment" />
+                    <img src="img/visa logo.png" alt="visa logo" class="payment" />
+                </div>
+            </section>
+        </div>
+
+        <footer class="sitefooter">
+            <div class="container">
+                <div class="sitefooter__inner">
+                    <div class="sitefooter__newsletter newsletter">
+                        <img src="img/logo.png" alt="sitelogo" class="newsletter__sitelogo" />
+                        <h4 class="newsletter__title">yangiliklar</h4>
+                        <form action="#!" class="newsletter__form">
+                            <label class="newsletter__email-label" for="newsletter__email">
+                                <input id="newsletter__email" type="email" name="newsletter__email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required />
+                                <span class="newsletter__email-placeholder">email adresingiz *</span>
+                                <button class="newsletter__submit" type="submit">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </label>
+                            <label class="newsletter__privacy-label" for="newsletter__privacy">
+                                <span class="newsletter__privacy-wrap">
+                                    <input id="newsletter__privacy" class="visually-hidden" type="checkbox" name="newsletter__privacy" required />
+                                    <i class="fas fa-check"></i>
+                                </span>
+                                <span>
+                                    <a class="privacy-policy" href="#!">Shartlar</a>
+                                    bilan tanishdim, roziman. *
+                                </span>
+                            </label>
+                        </form>
+                    </div>
+                    <div class="sitefooter__links">
+                        <div class="sitefooter__about about">
+                            <h4 class="sitefooter__title about__title">Biz haqimizda</h4>
+                            <ul class="sitefooter__list about__list">
+                                <li class="about__item">
+                                    <a href="#!" class="about__link" data-hover-text="Lorem, ipsum.">
+                                        <span>
+                                            Lorem, ipsum.
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="about__item">
+                                    <a href="#!" class="about__link" data-hover-text="Blanditiis, tempore.">
+                                        <span>
+                                            Blanditiis, tempore.
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="about__item">
+                                    <a href="#!" class="about__link" data-hover-text="Maxime, architecto.">
+                                        <span>
+                                            Maxime, architecto.
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="about__item">
+                                    <a href="#!" class="about__link" data-hover-text="Animi, vitae.">
+                                        <span>
+                                            Animi, vitae.
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sitefooter__info info">
+                            <h4 class="sitefooter__title info__title">Foydali</h4>
+                            <ul class="sitefooter__list info__list">
+                                <li class="info__item">
+                                    <a href="#!" class="info__link" data-hover-text="Lorem, ipsum.">
+                                        <span>
+                                            Lorem, ipsum.
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="info__item">
+                                    <a href="#!" class="info__link" data-hover-text="Blanditiis, tempore.">
+                                        <span>
+                                            Blanditiis, tempore.
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="info__item">
+                                    <a href="#!" class="info__link" data-hover-text="Maxime, architecto.">
+                                        <span>
+                                            Maxime, architecto.
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sitefooter__social social">
+                            <h4 class="sitefooter__title social__title">Ijtimoiy Tarmoqlar</h4>
+                            <ul class="sitefooter__list social__list">
+                                <li class="social__item">
+                                    <a href="#!" class="social__link" data-hover-text="e-bozor">
+                                        <i class="fab fa-telegram-plane"></i>
+                                        <span>e-bozor</span>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="#!" class="social__link" data-hover-text="e-bozor">
+                                        <i class="fab fa-instagram"></i>
+                                        <span>e-bozor</span>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="#!" class="social__link" data-hover-text="e-bozor.uz">
+                                        <i class="fab fa-twitter"></i>
+                                        <span>e-bozor.uz</span>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="#!" class="social__link" data-hover-text="e-bozor.uz">
+                                        <i class="fab fa-facebook-square"></i>
+                                        <span>e-bozor.uz</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="sitefooter__bottom">
+                    <div class="terms">
+                        <a href="#!" data-hover-text="Lorem, ipsum.">
+                            <span>Lorem, ipsum.</span>
+                        </a>
+                        <a href="#!" data-hover-text="Magni, atque.">
+                            <span>Magni, atque.</span>
+                        </a>
+                    </div>
+                    <div class="copyright">
+                        <i class="far fa-copyright"></i>
+                        e-bozor 2020 Barcha huquqlar himoyalangan
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- ! to-top -->
+        <a href="#body" id="up">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="slick/slick.min.js"></script>
+        <script src="js/slick-settings.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/general.js"></script>
+        <script src="js/helper-top.js"></script>
+        <script src="js/nav.js"></script>
+        <script src="js/nav-animation.js"></script>
+        <script src="js/menu.js"></script>
+        <script src="js/slider.js"></script>
+        <script src="js/my-slider.js"></script>
+        <script src="js/up-button.js"></script>
+        <script src="js/scroll-progress.js"></script>
+        <script src="js/products.js"></script>
+    </body>
+</html>

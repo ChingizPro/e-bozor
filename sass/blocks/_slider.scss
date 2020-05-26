@@ -1,0 +1,388 @@
+.slider {
+    position: relative;
+    width: 75%;
+    height: 570px;
+    background-color: #18324f;
+    overflow: hidden;
+
+    &__control {
+        position: absolute;
+        display: inline-flex;
+        width: 45px;
+        height: 45px;
+        justify-content: center;
+        align-items: center;
+        top: 50%;
+        transform: translateY(-50%);
+        border: none;
+        color: rgba($color: #fff, $alpha: 0.8);
+        background-color: rgba($color: #aaa, $alpha: 0.3);
+        box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.4);
+        font-size: 18px;
+        outline: none !important;
+        opacity: 0;
+        transition: 0.2s opacity ease-in-out;
+
+        &:hover,
+        &:focus {
+            background-color: rgba($color: #666, $alpha: 0.4);
+            box-shadow: 0 0 7px 2px #83b2cc;
+        }
+
+        &--prev {
+            left: 20px;
+        }
+
+        &--next {
+            right: 20px;
+        }
+    }
+}
+
+.slider:hover .slider__control {
+    opacity: 1;
+}
+
+.slides {
+    position: absolute;
+    @include my-flex;
+    flex-direction: column;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    perspective: 1200px;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+
+    &__layer {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        text-align: right;
+        align-items: flex-end;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        color: rgba(255, 255, 255, 0.6);
+        background-color: rgba(0, 0, 0, 0.2);
+        padding: 50px 70px 70px 50px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__title {
+        font-size: 28px;
+        margin-bottom: 7px;
+    }
+
+    &__text {
+        font-size: 21px;
+        margin-bottom: 7px;
+    }
+
+    &__buy {
+        display: inline-block;
+        font-weight: bold;
+        font-size: 18px;
+        padding: 11px 20px 10px;
+        color: rgba($color: #000, $alpha: 0.8);
+        background-color: rgba($color: #fff, $alpha: 0.8);
+        border-radius: 5px;
+        border: none;
+        margin-top: 20px;
+        outline: none !important;
+        transition: 0.2s color ease-in-out, 0.2s background-color ease-in;
+
+        &:hover,
+        &:focus {
+            color: rgba($color: #fff, $alpha: 0.8);
+            background-color: rgba($color: rgb(17, 125, 158), $alpha: 0.8);
+            box-shadow: 0 0 6px 1px rgba($color: #000, $alpha: 0.5);
+        }
+    }
+}
+
+.slider__buttons {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+}
+
+.item-button {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: rgba($color: #fff, $alpha: 0.8);
+    border-radius: 50%;
+    border: 2px solid rgba(43, 165, 202, 0.8);
+    outline: none !important;
+    margin-right: 5px;
+    box-shadow: 0 0 5px 1px rgba($color: #000, $alpha: 0.6);
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.active-button {
+    background-color: rgb(43, 165, 202);
+    box-shadow: 0 0 5px 1px rgba($color: #000, $alpha: 0.8);
+    transition: 0.12s box-shadow ease-in, 0.12s background-color ease-in;
+}
+
+.show-slide {
+    display: block;
+    animation: show-slide 0.5s ease-in-out forwards;
+}
+
+@keyframes show-slide {
+    0% {
+        opacity: 0.3;
+        transform: scale(1.15);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.show-slide .slide__title {
+    animation: title-anim 0.7s ease-in-out forwards;
+}
+
+@keyframes title-anim {
+    0% {
+        opacity: 0;
+        transform: translateX(400px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.show-slide .slide__text {
+    animation: text-anim 1.4s ease-in-out forwards;
+}
+
+@keyframes text-anim {
+    0% {
+        opacity: 0;
+        transform: translateX(400px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.show-slide .slide__buy {
+    animation: button-anim 0.7s ease-in-out forwards;
+}
+
+@keyframes button-anim {
+    0% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(0.8);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+// ! responsiveness
+@media (max-width: 1150px) {
+    .slide {
+        &__title {
+            font-size: 27px;
+        }
+
+        &__layer {
+            padding: 45px 55px 55px 45px;
+        }
+
+        &__text {
+            font-size: 20px;
+        }
+
+        &__buy {
+            font-size: 17px;
+            padding: 10px 20px 9px;
+        }
+    }
+}
+
+@media (max-width: 950px) {
+    .slide {
+        &__title {
+            font-size: 26px;
+        }
+
+        &__layer {
+            padding: 40px 60px 60px 40px;
+        }
+
+        &__text {
+            margin-bottom: 12px;
+        }
+
+        &__buy {
+            margin-top: 15px;
+            font-size: 17px;
+            padding: 9px 18px;
+        }
+    }
+}
+
+@media (max-width: 850px) {
+    .slide {
+        &__layer {
+            padding: 30px 50px 50px 30px;
+        }
+
+        &__text {
+            font-size: 17px;
+        }
+
+        &__buy {
+            margin-top: 10px;
+            font-size: 15px;
+            padding: 8px 13px;
+        }
+    }
+
+    .item-button {
+        width: 16px;
+        height: 16px;
+    }
+}
+
+@media (max-width: 620px) {
+    .slide {
+        &__title {
+            font-size: 23px;
+        }
+
+        &__text {
+            font-size: 16px;
+        }
+
+        &__layer {
+            padding: 20px 40px 40px 20px;
+        }
+
+        &__buy {
+            margin-top: 5px;
+            font-size: 14px;
+            padding: 7px 13px;
+        }
+    }
+
+    .item-button {
+        width: 16px;
+        height: 16px;
+    }
+
+    .slider__buttons {
+        bottom: 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .slide__title {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 450px) {
+    .slide {
+        &__title {
+            font-size: 19px;
+            text-align: center;
+        }
+
+        &__layer {
+            align-items: center;
+            padding: 20px;
+            padding-bottom: 50px;
+        }
+
+        &__text {
+            font-size: 14px;
+            text-align: center;
+        }
+
+        &__buy {
+            font-size: 13px;
+            padding: 6px 12px;
+        }
+    }
+
+    .item-button {
+        width: 15px;
+        height: 15px;
+        border: 1.5px solid rgba(43, 165, 202, 0.8);
+    }
+
+    .slider__control {
+        width: 50px;
+        height: 100%;
+        font-size: 16px;
+
+        &--prev {
+            left: 0;
+        }
+
+        &--next {
+            right: 0;
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .slide__layer {
+        padding-bottom: 40px;
+    }
+}
+
+@media (max-width: 350px) {
+    .slider__control {
+        width: 40px;
+        font-size: 15px;
+
+        &:hover,
+        &:focus {
+            background-color: rgba($color: #666, $alpha: 0.6);
+            box-shadow: none;
+        }
+    }
+
+    .slider:hover .slider__control {
+        opacity: 0.4;
+    }
+}

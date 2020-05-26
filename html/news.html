@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Yangiliklar | Bozor</title>
+        <link rel="shortcut icon" href="../img/icon.PNG" />
+        <link rel="stylesheet" href="../fontawesome/css/all.min.css" />
+        <link rel="stylesheet" href="../css/main.css" />
+    </head>
+    <body id="body">
+        <div class="wrapper">
+            <div class="loader">
+                <div class="bar"></div>
+            </div>
+        </div>
+
+        <!-- ! progress display -->
+        <div class="progress-container">
+            <div class="progress-bar" id="progress"></div>
+        </div>
+
+        <!-- ! progress display -->
+        <div class="progress-container">
+            <div class="progress-bar" id="progress"></div>
+        </div>
+
+        <div class="helper">
+            <div class="container helper__inner">
+                <div class="helper__left">
+                    <div class="helper__email"><span>Email: </span>info@e-bozor.uz</div>
+                    <div class="helper__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat!</div>
+                </div>
+                <div class="helper__right">
+                    <div class="helper__dropdown">
+                        <button class="helper__button">
+                            Til
+                            <i class="helper__dropdown--icon fas fa-chevron-down"></i>
+                        </button>
+                        <ul class="lang helper__dropdown-list">
+                            <li class="helper__dropdown-item">
+                                <a href="#!" data-lang="uz">O'zbekcha</a>
+                            </li>
+                            <li class="helper__dropdown-item">
+                                <a href="#!" data-lang="ru">Русский</a>
+                            </li>
+                            <li class="helper__dropdown-item">
+                                <a href="#!" data-lang="en">English</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="helper__link" href="sign-up.html" id="sign-up">Sign Up</a>
+                </div>
+            </div>
+        </div>
+
+        <header class="siteheader container">
+            <div class="siteheader__left">
+                <a href="../index.html" class="sitelogo"><img src="../img/logo.png" alt="sitelogo" /></a>
+                <form action="#!" class="siteheader__search">
+                    <input type="search" class="siteheader__search--input" placeholder="Izlash..." aria-label="Search input" />
+                    <button type="submit" class="siteheader__search--button">Qidirish</button>
+                </form>
+            </div>
+            <div class="siteheader__right">
+                <div class="compare">
+                    <a href="#!" class="siteheader__right--link compare__link">
+                        <i class="fas fa-store"></i>
+                        <span>Taqqoslash</span>
+                    </a>
+                </div>
+                <div class="cart">
+                    <a href="#!" class="siteheader__right--link cart__link">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>Savatcha</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <nav class="sitenav">
+            <div class="sitenav__inner container">
+                <button class="sitenav__menu-opener">
+                    <i class="fas fa-ellipsis-h"></i>
+                </button>
+                <ul class="sitenav__list">
+                    <li class="sitenav__item">
+                        <a class="sitenav__link" href="../index.html" data-hover-text="Bosh sahifa">
+                            <span>Bosh sahifa</span>
+                        </a>
+                    </li>
+                    <li class="sitenav__item">
+                        <a class="sitenav__link" href="products.html" data-hover-text="Chegirmalar">
+                            <span>Chegirmalar</span>
+                        </a>
+                    </li>
+                    <li class="sitenav__item">
+                        <a class="sitenav__link" href="news.html" data-hover-text="Yangiliklar">
+                            <span>Yangiliklar</span>
+                        </a>
+                    </li>
+                    <li class="sitenav__item">
+                        <a class="sitenav__link" href="rules.html" data-hover-text="Foydalanish qoidalari">
+                            <span>Foydalanish qoidalari</span>
+                        </a>
+                    </li>
+                    <li class="sitenav__item">
+                        <a class="sitenav__link" href="contact.html" data-hover-text="Biz bilan aloqa">
+                            <span>Biz bilan aloqa</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="phone-call">
+                    <a href="tel:+998338778787">
+                        <i class="fas fa-phone-alt"></i>
+                        +998338778787
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <section class="news-box-wrapper"></section>
+        </div>
+
+        <!-- * news box template -->
+        <template id="news-box-teplate">
+            <article class="news-box">
+                <img src="" alt="news-box-img" class="news-box__img" />
+                <h3 class="news-box__title"></h3>
+                <div class="news-box__date">
+                    <time></time>
+                </div>
+                <div class="news-box__author"></div>
+                <div class="news-box__description"></div>
+            </article>
+        </template>
+
+        <footer class="sitefooter">
+            <div class="container">
+                <div class="sitefooter__inner">
+                    <div class="sitefooter__newsletter newsletter">
+                        <img src="../img/logo.png" alt="sitelogo" class="newsletter__sitelogo" />
+                        <h4 class="newsletter__title">yangiliklar</h4>
+                        <form action="#!" class="newsletter__form">
+                            <label class="newsletter__email-label" for="newsletter__email">
+                                <input id="newsletter__email" type="email" name="newsletter__email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required />
+                                <span class="newsletter__email-placeholder">email adresingiz *</span>
+                                <button class="newsletter__submit" type="submit">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </label>
+                            <label class="newsletter__privacy-label" for="newsletter__privacy">
+                                <span class="newsletter__privacy-wrap">
+                                    <input id="newsletter__privacy" class="visually-hidden" type="checkbox" name="newsletter__privacy" required />
+                                    <i class="fas fa-check"></i>
+                                </span>
+                                <span>
+                                    <a class="privacy-policy" href="#!">Shartlar</a>
+                                    bilan tanishdim, roziman. *
+                                </span>
+                            </label>
+                        </form>
+                    </div>
+                    <div class="sitefooter__links">
+                        <div class="sitefooter__about about">
+                            <h4 class="sitefooter__title about__title">Biz haqimizda</h4>
+                            <ul class="sitefooter__list about__list">
+                                <li class="about__item">
+                                    <a href="#!" class="about__link" data-hover-text="Lorem, ipsum.">
+                                        <span>
+                                            Lorem, ipsum.
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="about__item">
+                                    <a href="#!" class="about__link" data-hover-text="Blanditiis, tempore.">
+                                        <span>
+                                            Blanditiis, tempore.
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="about__item">
+                                    <a href="#!" class="about__link" data-hover-text="Maxime, architecto.">
+                                        <span>
+                                            Maxime, architecto.
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="about__item">
+                                    <a href="#!" class="about__link" data-hover-text="Animi, vitae.">
+                                        <span>
+                                            Animi, vitae.
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sitefooter__info info">
+                            <h4 class="sitefooter__title info__title">Foydali</h4>
+                            <ul class="sitefooter__list info__list">
+                                <li class="info__item">
+                                    <a href="#!" class="info__link" data-hover-text="Lorem, ipsum.">
+                                        <span>
+                                            Lorem, ipsum.
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="info__item">
+                                    <a href="#!" class="info__link" data-hover-text="Blanditiis, tempore.">
+                                        <span>
+                                            Blanditiis, tempore.
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="info__item">
+                                    <a href="#!" class="info__link" data-hover-text="Maxime, architecto.">
+                                        <span>
+                                            Maxime, architecto.
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="sitefooter__social social">
+                            <h4 class="sitefooter__title social__title">Ijtimoiy Tarmoqlar</h4>
+                            <ul class="sitefooter__list social__list">
+                                <li class="social__item">
+                                    <a href="#!" class="social__link" data-hover-text="e-bozor">
+                                        <i class="fab fa-telegram-plane"></i>
+                                        <span>e-bozor</span>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="#!" class="social__link" data-hover-text="e-bozor">
+                                        <i class="fab fa-instagram"></i>
+                                        <span>e-bozor</span>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="#!" class="social__link" data-hover-text="e-bozor.uz">
+                                        <i class="fab fa-twitter"></i>
+                                        <span>e-bozor.uz</span>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="#!" class="social__link" data-hover-text="e-bozor.uz">
+                                        <i class="fab fa-facebook-square"></i>
+                                        <span>e-bozor.uz</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="sitefooter__bottom">
+                    <div class="terms">
+                        <a href="#!" data-hover-text="Lorem, ipsum.">
+                            <span>Lorem, ipsum.</span>
+                        </a>
+                        <a href="#!" data-hover-text="Magni, atque.">
+                            <span>Magni, atque.</span>
+                        </a>
+                    </div>
+                    <div class="copyright">
+                        <i class="far fa-copyright"></i>
+                        e-bozor 2020 Barcha huquqlar himoyalangan
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- ! to-top -->
+        <a href="#body" id="up">
+            <i class="fas fa-chevron-up"></i>
+        </a>
+
+        <script src="../js/main.js"></script>
+        <script src="../js/general.js"></script>
+        <script src="../js/helper-top.js"></script>
+        <script src="../js/nav.js"></script>
+        <script src="../js/nav-animation.js"></script>
+        <script src="../js/scroll-progress.js"></script>
+        <script src="../js/helpers.js"></script>
+        <script src="../js/scroll-progress.js"></script>
+        <script src="../js/up-button.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+        <script src="../js/news.js"></script>
+    </body>
+</html>
